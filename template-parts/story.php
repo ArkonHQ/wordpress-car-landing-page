@@ -7,7 +7,7 @@
     </div>
 
     <div class="mt-8 flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
-      <h1 class="max-w-xl text-3xl font-bold leading-tight text-black sm:text-4xl">
+      <h1 class="max-w-xl text-1xl font-bold leading-tight text-black sm:text-4xl">
         Powering a Greener Future, One Drive at a Time
       </h1>
       <p class="max-w-2xl text-sm leading-7 tracking-tight text-[#6b7280] sm:text-base">
@@ -17,8 +17,8 @@
 
     <div class="mt-12 flex flex-col gap-8 lg:flex-row lg:items-start">
       <div class="flex max-w-sm flex-col">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/charging-the-car.png" alt="charging the car" class="h-[280px] w-full object-cover rounded-md sm:h-[360px]" />
-        <h2 class="mt-6 text-lg font-bold text-black">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/charging-the-car.png" alt="charging the car" class="h-[280px] w-full object-cover rounded-md transition duration-300 ease-out hover:brightness-75 sm:h-[360px]" />
+        <h2 class="mt-6 text-xl font-bold text-black">
           Join a Connected Charging Network
         </h2>
         <p class="mt-2 text-sm leading-6 text-[#6b7280]">
@@ -27,15 +27,15 @@
       </div>
 
       <div class="relative flex-1">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/parking.png" alt="car" class="h-[280px] w-full object-cover rounded-md sm:h-[360px]" />
-        <div class="absolute inset-0 flex flex-col justify-end rounded-md bg-gradient-to-t from-black/70 via-black/20 to-transparent p-8">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/parking.png" alt="car" class="h-[280px] w-full object-cover rounded-md transition duration-300 ease-out hover:brightness-75 sm:h-[360px]" />
+        <div class="absolute inset-0 flex flex-col justify-end rounded-md bg-linear-to-t from-black/70 via-black/20 to-transparent p-8 ">
           <h2 class="text-lg font-bold text-white">
             EVs for Everyone
           </h2>
           <p class="mt-2 max-w-lg text-sm leading-6 text-gray-200">
             From eco-conscious drivers to performance enthusiasts, we believe electric vehicles should be accessible and exciting for all.
           </p>
-          <a href="#" class="mt-4 inline-flex w-fit items-center justify-center rounded-md bg-[#E9FF61] px-6 py-3 font-medium text-black">
+          <a href="#" class="mt-4 inline-flex w-fit items-center justify-center rounded-md bg-[#E9FF61] px-6 py-3 font-medium text-black transition duration-300 ease-out hover:-translate-y-1 hover:bg-[#dff24d] hover:shadow-lg">
             Our Story
           </a>
         </div>
