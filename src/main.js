@@ -388,7 +388,7 @@ function initImageHoverTilt() {
   tiltImgs.forEach(img => {
     img.addEventListener('mousemove', e => {
       const rect = img.getBoundingClientRect();
-      const nx = (e.clientX - rect.left) / rect.width - 0.5; // -0.5 → 0.5
+      const nx = (e.clientX - rect.left) / rect.width - 0.5;
       const ny = (e.clientY - rect.top) / rect.height - 0.5;
       gsap.to(img, {
         rotateY: nx * 10,
