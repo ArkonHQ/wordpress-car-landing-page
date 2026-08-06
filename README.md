@@ -37,13 +37,6 @@ From the moment the page loads, visitors experience:
 
 All animations are powered by **GSAP + ScrollTrigger**, bundled with **Vite** for lightning‑fast development, and styled with clean CSS (including Tailwind utilities for consistency).
 
----
-
-## 🎥 Live Preview
-
-![Live Preview](assets/hero-preview.gif)
-
----
 
 ## ⚡ Features
 
@@ -156,7 +149,7 @@ The theme is designed to be easily tailored to your brand.
 
 ## 📸 Showcase
 
-*![Hero Section](assets/hero-screenshot.png)*
+*![Hero Section](assets/image.png)*
 
 ---
 
