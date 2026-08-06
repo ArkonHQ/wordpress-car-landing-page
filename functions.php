@@ -44,3 +44,50 @@ add_filter( 'script_loader_tag', function ( $tag, $handle, $src ) {
     }
     return $tag;
 }, 10, 3 );
+
+function ev_theme_seo_setup() {
+    add_theme_support( 'title-tag' );
+}
+add_action( 'after_setup_theme', 'ev_theme_seo_setup' );
+
+function ev_theme_expert_meta_tags() {
+    if ( is_admin() ) return;
+    $site_name   = get_bloginfo( 'name' );
+    $site_desc   = get_bloginfo( 'description' ) ?: 'Experience the future of mobility with our cutting-edge electric vehicles. Reserve your EV today.';
+    $current_url = home_url( add_query_arg( null, null ) );
+    
+    if ( is_singular() ) {
+        global $post;
+        $title       = get_the_title() . ' - ' . $site_name;
+        $description = wp_trim_words( $post->post_content, 25, '...' );
+        if ( empty( $description ) ) $description = $site_desc;
+    } else {
+        $title       = $site_name . ' - ' . $site_desc;
+        $description = $site_desc;
+    }
+    
+    $og_image = get_template_directory_uri() . '/assets/front-view.png';
+    if ( is_singular() && has_post_thumbnail() ) {
+        $og_image = get_the_post_thumbnail_url( null, 'large' );
+    }
+
+    echo "\n";
+    echo '<meta name="description" content="' . esc_attr( $description ) . '" />' . "\n";
+    echo '<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />' . "\n";
+    echo '<link rel="canonical" href="' . esc_url( $current_url ) . '" />' . "\n";
+    echo '<meta property="og:locale" content="' . esc_attr( get_locale() ) . '" />' . "\n";
+    echo '<meta property="og:type" content="' . ( is_singular() ? 'article' : 'website' ) . '" />' . "\n";
+    echo '<meta property="og:title" content="' . esc_attr( $title ) . '" />' . "\n";
+    echo '<meta property="og:description" content="' . esc_attr( $description ) . '" />' . "\n";
+    echo '<meta property="og:url" content="' . esc_url( $current_url ) . '" />' . "\n";
+    echo '<meta property="og:site_name" content="' . esc_attr( $site_name ) . '" />' . "\n";
+    echo '<meta property="og:image" content="' . esc_url( $og_image ) . '" />' . "\n";
+    echo '<meta property="og:image:width" content="1200" />' . "\n";
+    echo '<meta property="og:image:height" content="630" />' . "\n";
+    echo '<meta name="twitter:card" content="summary_large_image" />' . "\n";
+    echo '<meta name="twitter:title" content="' . esc_attr( $title ) . '" />' . "\n";
+    echo '<meta name="twitter:description" content="' . esc_attr( $description ) . '" />' . "\n";
+    echo '<meta name="twitter:image" content="' . esc_url( $og_image ) . '" />' . "\n";
+    echo "\n";
+}
+add_action( 'wp_head', 'ev_theme_expert_meta_tags', 1 );
