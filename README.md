@@ -41,7 +41,7 @@ All animations are powered by **GSAP + ScrollTrigger**, bundled with **Vite** fo
 
 ## 🎥 Live Preview
 
-*[Insert a GIF or screenshot of the landing page in action]*
+*![Hero Section](assets/hero.gif)*    
 
 ---
 
@@ -156,10 +156,7 @@ The theme is designed to be easily tailored to your brand.
 
 ## 📸 Showcase
 
-*![Hero Section](assets/screenshot-1.png)*  
-*![Slider & Hover Effects](assets/screenshot-2.png)*  
-
-*(Add real screenshots or a GIF of the page for maximum impact.)*
+*![Hero Section](assets/screenshot-1.png)*    
 
 ---
 
