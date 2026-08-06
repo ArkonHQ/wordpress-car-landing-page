@@ -41,7 +41,7 @@ All animations are powered by **GSAP + ScrollTrigger**, bundled with **Vite** fo
 
 ## 🎥 Live Preview
 
-*![Hero Section](assets/hero.gif)*    
+![Live Preview](assets/hero-preview.gif)
 
 ---
 
@@ -156,7 +156,7 @@ The theme is designed to be easily tailored to your brand.
 
 ## 📸 Showcase
 
-*![Hero Section](assets/screenshot-1.png)*    
+*![Hero Section](assets/hero-screenshot.png)*
 
 ---
 
@@ -184,4 +184,3 @@ See the [LICENSE](LICENSE) file for details.
     <sub>⚡ Electrify your online presence.</sub>
   </p>
 </div>
-```
