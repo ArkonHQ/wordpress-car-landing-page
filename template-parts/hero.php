@@ -1,6 +1,6 @@
 <!-- Hero section -->
 
-<section class="hero pt-32 pb-16 bg-linear-to-b from-[#444D07] to-[#FFFFFF] min-h-screen flex flex-col justify-center">
+<section class="hero pt-32 pb-24 bg-linear-to-b from-[#444D07] to-[#FFFFFF] min-h-screen flex flex-col justify-center">
   <div class="flex items-center justify-center flex-col">
     <h1 class="hero-title-smooth mb-[24rem] uppercase bg-linear-to-b from-white/35 from-46% to-[#436C4C] bg-clip-text text-transparent text-[260px] font-semibold tracking-widest">
       SMOOTH

@@ -3,36 +3,14 @@
   Template Name: Car Landing Page
 */
 ?>
+<!-- header -->
 <?php get_header(); ?>
+
 <!-- hero section -->
 <?php get_template_part('template-parts/hero'); ?>
 
-<!-- features section -->
-<section class="features">
-  <div class="container">
-    <div class="section-header">
-      <h2>Powered by Innovation</h2>
-      <p>Engineered for performance, designed for you.</p>
-    </div>
-    <div class="feature-grid">
-      <div class="feature-card">
-        <img src="./assets/icons/bolt.svg" alt="High Performance" class="feature-icon">
-        <h3>High Performance</h3>
-        <p>0-25 mph in under 4 seconds with our state-of-the-art electric motor.</p>
-      </div>
-      <div class="feature-card">
-        <img src="./assets/icons/battery.svg" alt="Long Range" class="feature-icon">
-        <h3>Long Range</h3>
-        <p>Up to 100 miles on a single charge. Adventure awaits.</p>
-      </div>
-      <div class="feature-card">
-        <img src="./assets/icons/shield.svg" alt="Safety" class="feature-icon">
-        <h3>Safety First</h3>
-        <p>Integrated braking systems and smart lighting for ultimate safety.</p>
-      </div>
-    </div>
-  </div>
-</section>
+<!-- products section -->
+<?php get_template_part('template-parts/products'); ?>
 
 <!-- product section -->
 <section class="product-showcase">
