@@ -12,55 +12,9 @@
 <!-- products section -->
 <?php get_template_part('template-parts/products'); ?>
 
-<!-- product section -->
-<section class="product-showcase">
-  <div class="container">
-    <div class="product-grid">
-      <div class="product-image">
-        <img src="./assets/bike1.png" alt="Urban Commuter">
-      </div>
-      <div class="product-details">
-        <span class="badge">Featured Product</span>
-        <h2>The Urban Commuter</h2>
-        <p class="price">$1,999</p>
-        <p class="description">Designed for the modern city dweller. Lightweight, foldable, and powerful. Conquer your daily commute with style.</p>
-        
-        <!-- specs list -->
-        <ul class="specs-list">
-          <li>
-            <img src="./assets/icons/battery.svg" alt="">
-            <span>100 Mile Range</span>
-          </li>
-          <li>
-            <img src="./assets/icons/speedometer.svg" alt="">
-            <span>28 MPH Max Speed</span>
-          </li>
-          <li>
-            <img src="./assets/icons/weight.svg" alt="">
-            <span>35 lb Weight</span>
-          </li>
-          <li>
-            <img src="./assets/icons/bolt.svg" alt="">
-            <span>Fast Charging</span>
-          </li>
-        </ul>
+<!-- story section  -->
+ <?php get_template_part('template-parts/story'); ?>
 
-        <!-- color options -->
-        <div class="color-options">
-          <h4>Available Colors</h4>
-          <div class="colors">
-            <button class="color-btn active" style="background: #000;" aria-label="Black">Hi</button>
-            <button class="color-btn" style="background: #fff;" aria-label="White"></button>
-            <button class="color-btn" style="background: #D4AF37;" aria-label="Gold"></button>
-            <button class="color-btn" style="background: #1e3a5f;" aria-label="Navy"></button>
-          </div>
-        </div>
-
-        <a href="#" class="primary-btn mt-6">Pre-order Now</a>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- reviews section -->
 <section class="reviews">
